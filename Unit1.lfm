@@ -1,0 +1,111 @@
+object Form1: TForm1
+  Left = 257
+  Height = 240
+  Top = 222
+  Width = 879
+  Caption = 'Lanzador'
+  ClientHeight = 240
+  ClientWidth = 879
+  OnClose = FormClose
+  OnShow = FormShow
+  LCLVersion = '0.9.30'
+  object Button1: TButton
+    Left = 336
+    Height = 25
+    Top = 189
+    Width = 75
+    Caption = 'Ejecutar'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object ListBox1: TListBox
+    Left = 8
+    Height = 224
+    Top = 8
+    Width = 148
+    Items.Strings = (
+      'D:\TEMP\JorgeAbreu\lazarus\Projects\LanzadorAlpha\project1.exe'
+    )
+    ItemHeight = 13
+    TabOrder = 1
+  end
+  object ListBox2: TListBox
+    Left = 168
+    Height = 224
+    Top = 8
+    Width = 140
+    Items.Strings = (
+      'Lanzador de App'
+    )
+    ItemHeight = 13
+    TabOrder = 2
+  end
+  object Button2: TButton
+    Left = 760
+    Height = 25
+    Top = 89
+    Width = 75
+    Caption = 'Cargar App'
+    OnClick = Button2Click
+    TabOrder = 3
+  end
+  object Edit1: TEdit
+    Left = 320
+    Height = 21
+    Top = 35
+    Width = 432
+    TabOrder = 4
+    Text = 'Edit1'
+  end
+  object Edit2: TEdit
+    Left = 320
+    Height = 21
+    Top = 93
+    Width = 432
+    TabOrder = 5
+    Text = 'Edit2'
+  end
+  object Label1: TLabel
+    Left = 320
+    Height = 14
+    Top = 20
+    Width = 89
+    Caption = 'Path y Ejecutable:'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 320
+    Height = 14
+    Top = 67
+    Width = 86
+    Caption = 'Nombre personal:'
+    ParentColor = False
+  end
+  object Button3: TButton
+    Left = 760
+    Height = 25
+    Top = 35
+    Width = 75
+    Caption = 'Select File'
+    OnClick = Button3Click
+    TabOrder = 6
+  end
+  object Button4: TButton
+    Left = 511
+    Height = 25
+    Top = 188
+    Width = 75
+    Caption = 'Minimizar'
+    OnClick = Button4Click
+    TabOrder = 7
+  end
+  object OD: TOpenDialog
+    left = 760
+  end
+  object Tray: TTrayIcon
+    Hint = 'Lanzador'
+    OnClick = TrayClick
+    OnDblClick = TrayDblClick
+    left = 664
+  end
+end

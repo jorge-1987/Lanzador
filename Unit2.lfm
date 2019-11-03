@@ -1,0 +1,19 @@
+object Form2: TForm2
+  Left = 307
+  Height = 310
+  Top = 499
+  Width = 169
+  Caption = 'Aplicaciones'
+  ClientHeight = 310
+  ClientWidth = 169
+  LCLVersion = '0.9.30'
+  object ListBox1: TListBox
+    Left = 8
+    Height = 296
+    Top = 8
+    Width = 156
+    ItemHeight = 0
+    OnDblClick = ListBox1DblClick
+    TabOrder = 0
+  end
+end
